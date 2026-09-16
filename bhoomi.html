@@ -1,0 +1,2807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Bhoomi ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+min-height:100vh;
+color:white;
+overflow-x:hidden;
+
+background:
+radial-gradient(circle at 15% 10%,#ff4f9a55,transparent 30%),
+radial-gradient(circle at 85% 90%,#8b5cf655,transparent 30%),
+linear-gradient(135deg,#100018,#21002f,#09000f);
+}
+
+
+/* LOADER */
+
+#loader{
+position:fixed;
+inset:0;
+background:#09000f;
+z-index:999999;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+transition:1s;
+}
+
+.loader-heart{
+font-size:90px;
+animation:heartbeat 1s infinite;
+}
+
+.loader-content h1{
+margin-top:20px;
+font-size:35px;
+}
+
+.loader-content p{
+margin-top:10px;
+color:#ffafd2;
+}
+
+@keyframes heartbeat{
+
+50%{
+transform:scale(1.25);
+}
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+position:sticky;
+top:0;
+
+z-index:5000;
+
+display:flex;
+justify-content:center;
+gap:8px;
+flex-wrap:wrap;
+
+padding:14px 10px;
+
+background:#09000fe8;
+
+backdrop-filter:blur(20px);
+
+border-bottom:1px solid #ffffff15;
+}
+
+.navbar button{
+
+border:1px solid #ffffff20;
+
+background:#ffffff0d;
+
+color:white;
+
+padding:9px 14px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.navbar button:hover,
+.navbar button.active{
+
+background:
+linear-gradient(135deg,#ff4f9a,#8b5cf6);
+
+transform:translateY(-3px);
+}
+
+
+/* PAGE */
+
+.page{
+
+display:none;
+
+min-height:calc(100vh - 65px);
+
+padding:60px 18px;
+}
+
+.page.active{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+animation:pageIn .7s ease;
+}
+
+@keyframes pageIn{
+
+from{
+opacity:0;
+transform:translateY(40px) scale(.98);
+}
+
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+}
+
+.container{
+
+width:100%;
+max-width:1050px;
+
+text-align:center;
+}
+
+
+/* CARD */
+
+.card{
+
+padding:40px;
+
+border-radius:35px;
+
+background:#ffffff0c;
+
+border:1px solid #ffffff20;
+
+backdrop-filter:blur(25px);
+
+box-shadow:0 25px 80px #00000066;
+}
+
+
+/* HOME */
+
+.badge{
+
+display:inline-block;
+
+padding:10px 20px;
+
+border:1px solid #ffffff25;
+
+border-radius:50px;
+
+color:#ffc1dc;
+
+background:#ffffff0b;
+
+margin-bottom:25px;
+}
+
+.home h1{
+
+font-size:clamp(50px,9vw,100px);
+
+line-height:.95;
+
+background:
+linear-gradient(
+90deg,
+#ff5fa8,
+#fff,
+#b794f4,
+#ff5fa8
+);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+animation:gradient 5s linear infinite;
+}
+
+@keyframes gradient{
+
+to{
+background-position:300%;
+}
+
+}
+
+.home h2{
+
+margin-top:25px;
+
+color:#ffd0e5;
+}
+
+.home p{
+
+margin-top:15px;
+
+color:#e8d4df;
+
+font-size:18px;
+}
+
+.big-heart{
+
+font-size:100px;
+
+margin:30px;
+
+animation:heartbeat 1.2s infinite;
+}
+
+
+/* PHOTOS */
+
+.photo-frame{
+
+width:min(320px,90%);
+
+margin:0 auto 30px;
+
+padding:10px;
+
+border-radius:30px;
+
+background:
+linear-gradient(
+135deg,
+#ff4f9a,
+#8b5cf6,
+#ff4f9a
+);
+
+background-size:200%;
+
+animation:
+borderMove 4s linear infinite,
+photoFloat 4s ease-in-out infinite;
+
+box-shadow:0 0 50px #ff4f9a55;
+}
+
+.photo-frame img{
+
+display:block;
+
+width:100%;
+
+height:380px;
+
+object-fit:cover;
+
+border-radius:22px;
+}
+
+@keyframes borderMove{
+
+to{
+background-position:200%;
+}
+
+}
+
+@keyframes photoFloat{
+
+50%{
+transform:translateY(-10px);
+}
+
+}
+
+.photo-title{
+
+color:#ffd0e5;
+
+margin-bottom:20px;
+}
+
+
+/* BUTTON */
+
+.btn{
+
+border:0;
+
+padding:15px 25px;
+
+margin:12px 5px;
+
+border-radius:50px;
+
+color:white;
+
+font-weight:bold;
+
+font-size:15px;
+
+cursor:pointer;
+
+background:
+linear-gradient(135deg,#ff4f9a,#8b5cf6);
+
+box-shadow:0 10px 35px #ff4f9a44;
+
+transition:.3s;
+}
+
+.btn:hover{
+
+transform:
+translateY(-5px)
+scale(1.05);
+}
+
+
+/* TEXT */
+
+.card h1,
+.card h2{
+
+color:#ffd0e5;
+
+margin-bottom:20px;
+}
+
+.card p{
+
+color:#f1dfe8;
+
+font-size:17px;
+
+line-height:1.8;
+}
+
+
+/* GRID */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:18px;
+
+margin-top:25px;
+}
+
+.fun-card{
+
+padding:28px 18px;
+
+border-radius:25px;
+
+background:#ffffff0c;
+
+border:1px solid #ffffff15;
+
+transition:.4s;
+}
+
+.fun-card:hover{
+
+transform:
+translateY(-12px)
+rotate(2deg);
+
+background:#ffffff18;
+}
+
+.fun-card .emoji{
+
+font-size:50px;
+}
+
+.fun-card h3{
+
+color:#ffc2dd;
+
+margin:12px 0;
+}
+
+.fun-card p{
+
+font-size:14px;
+}
+
+
+/* SPECIAL */
+
+.special-list{
+
+display:grid;
+
+gap:15px;
+
+margin-top:25px;
+}
+
+.special-item{
+
+padding:20px;
+
+text-align:left;
+
+border-radius:20px;
+
+background:#ff4f9a0c;
+
+border:1px solid #ff8fbc22;
+
+transition:.4s;
+}
+
+.special-item:hover{
+
+transform:
+translateX(12px);
+}
+
+
+/* GALLERY */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:22px;
+
+margin-top:30px;
+}
+
+.memory{
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid #ffffff20;
+
+background:#ffffff0d;
+
+transition:.4s;
+
+padding-bottom:10px;
+}
+
+.memory:hover{
+
+transform:
+scale(1.04)
+rotate(1deg);
+
+box-shadow:
+0 20px 50px #ff4f9a33;
+}
+
+.memory img{
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+display:block;
+}
+
+.memory p{
+
+padding:14px;
+
+font-size:15px;
+}
+
+
+/* =========================
+FUN GAME
+========================= */
+
+.game-area{
+
+position:relative;
+
+width:100%;
+
+height:420px;
+
+margin-top:25px;
+
+overflow:hidden;
+
+border-radius:30px;
+
+background:
+radial-gradient(circle,#ff4f9a18,transparent 50%),
+#ffffff08;
+
+border:1px solid #ffffff20;
+}
+
+.game-item{
+
+position:absolute;
+
+font-size:50px;
+
+cursor:pointer;
+
+user-select:none;
+
+transition:.15s;
+
+animation:gameFloat 1s infinite alternate;
+}
+
+.game-item:hover{
+
+transform:scale(1.2);
+}
+
+@keyframes gameFloat{
+
+from{
+transform:translateY(-5px);
+}
+
+to{
+transform:translateY(5px);
+}
+
+}
+
+#gameScore{
+
+font-size:28px;
+
+margin:20px;
+
+color:#ffafd2;
+}
+
+#gameTimer{
+
+font-size:20px;
+
+color:#ffd0e5;
+}
+
+.game-message{
+
+min-height:35px;
+
+margin-top:15px;
+
+font-size:18px;
+
+color:#ffc1dc;
+}
+
+
+/* =========================
+CAKE
+========================= */
+
+.cake-area{
+
+margin-top:30px;
+}
+
+.cake{
+
+position:relative;
+
+width:260px;
+
+height:190px;
+
+margin:80px auto 30px;
+
+transition:.5s;
+}
+
+.cake-body{
+
+position:absolute;
+
+bottom:0;
+left:0;
+
+width:260px;
+height:105px;
+
+border-radius:18px;
+
+background:
+linear-gradient(
+135deg,
+#ff76ae,
+#c83d7b
+);
+
+box-shadow:
+0 15px 40px #ff4f9a44;
+}
+
+.cake-body:before{
+
+content:"";
+
+position:absolute;
+
+top:15px;
+left:20px;
+right:20px;
+
+height:20px;
+
+border-radius:50%;
+
+background:#fff;
+}
+
+.cream{
+
+position:absolute;
+
+top:45px;
+left:20px;
+
+width:220px;
+height:35px;
+
+background:white;
+
+border-radius:50%;
+}
+
+.candle{
+
+position:absolute;
+
+z-index:3;
+
+width:22px;
+height:70px;
+
+background:#ffd0e5;
+
+left:119px;
+top:-25px;
+
+border-radius:6px;
+}
+
+.flame{
+
+position:absolute;
+
+width:28px;
+height:38px;
+
+left:-3px;
+top:-38px;
+
+background:#ffd166;
+
+border-radius:
+50% 50% 50% 10%;
+
+transform:rotate(45deg);
+
+box-shadow:
+0 0 35px #ffd166;
+
+animation:
+flame .4s infinite alternate;
+}
+
+@keyframes flame{
+
+to{
+transform:
+rotate(45deg)
+scale(1.15);
+}
+
+}
+
+.cake.cut{
+
+animation:cakeShake .8s ease;
+}
+
+.cake.cut .cake-body{
+
+animation:cakeCut .8s forwards;
+}
+
+@keyframes cakeShake{
+
+20%{
+transform:rotate(-4deg);
+}
+
+40%{
+transform:rotate(4deg);
+}
+
+60%{
+transform:rotate(-3deg);
+}
+
+80%{
+transform:rotate(3deg);
+}
+
+100%{
+transform:rotate(0);
+}
+}
+
+@keyframes cakeCut{
+
+50%{
+transform:
+scale(1.05)
+rotate(2deg);
+}
+
+100%{
+transform:
+scale(.9);
+
+opacity:.8;
+}
+
+}
+
+
+/* SURPRISE */
+
+.secret{
+
+display:none;
+
+margin-top:25px;
+
+padding:30px;
+
+border-radius:25px;
+
+background:#ff4f9a12;
+
+border:1px solid #ff8fbc44;
+
+animation:appear .8s ease;
+}
+
+@keyframes appear{
+
+from{
+
+opacity:0;
+
+transform:scale(.7);
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+}
+
+}
+
+#countdown{
+
+font-size:60px;
+
+font-weight:bold;
+
+color:#ffafd2;
+
+animation:
+countPulse .8s infinite alternate;
+}
+
+@keyframes countPulse{
+
+to{
+transform:scale(1.2);
+}
+
+}
+
+
+/* =========================
+I LOVE YOU
+========================= */
+
+.love-box{
+
+position:relative;
+
+overflow:hidden;
+
+padding:50px 25px;
+
+border-radius:35px;
+
+background:
+radial-gradient(
+circle at center,
+#ff4f9a18,
+transparent 60%
+);
+}
+
+.love-heart{
+
+font-size:110px;
+
+animation:
+heartbeat 1s infinite;
+}
+
+.love-title{
+
+font-size:
+clamp(35px,7vw,70px);
+
+margin:20px 0;
+
+background:
+linear-gradient(
+90deg,
+#ff4f9a,
+#fff,
+#ff4f9a
+);
+
+background-size:200%;
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+animation:
+gradient 2s linear infinite;
+}
+
+.love-buttons{
+
+position:relative;
+
+width:100%;
+
+height:150px;
+
+margin-top:20px;
+}
+
+.yes-btn{
+
+background:
+linear-gradient(
+135deg,
+#ff4f9a,
+#ff1744
+);
+}
+
+.no-btn{
+
+position:absolute;
+
+left:55%;
+
+top:55px;
+
+background:#333;
+
+transition:
+left .25s ease,
+top .25s ease,
+transform .25s ease,
+opacity .2s;
+}
+
+.love-success{
+
+display:none;
+
+animation:
+loveAppear 1s ease;
+}
+
+@keyframes loveAppear{
+
+from{
+
+opacity:0;
+
+transform:scale(.5);
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+}
+
+}
+
+.love-text{
+
+font-size:
+clamp(45px,10vw,100px);
+
+font-weight:bold;
+
+background:
+linear-gradient(
+90deg,
+#ff4f9a,
+#fff,
+#ff4f9a
+);
+
+background-size:200%;
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+animation:
+gradient 2s linear infinite;
+}
+
+
+/* FINAL */
+
+.final-heart{
+
+font-size:110px;
+
+animation:
+heartbeat 1s infinite;
+
+margin-bottom:20px;
+}
+
+
+/* BALLOONS */
+
+.balloon{
+
+position:fixed;
+
+bottom:-150px;
+
+font-size:70px;
+
+z-index:20;
+
+pointer-events:none;
+
+animation:
+balloonUp 7s linear forwards;
+}
+
+@keyframes balloonUp{
+
+to{
+
+transform:
+translateY(-120vh)
+rotate(15deg);
+}
+
+}
+
+
+/* HEARTS */
+
+.heart{
+
+position:fixed;
+
+bottom:-30px;
+
+font-size:25px;
+
+pointer-events:none;
+
+z-index:10;
+
+animation:
+floatHeart 6s linear forwards;
+}
+
+@keyframes floatHeart{
+
+0%{
+
+opacity:0;
+
+transform:
+translateY(0)
+rotate(0);
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+
+opacity:0;
+
+transform:
+translateY(-110vh)
+rotate(360deg);
+}
+
+}
+
+
+/* CONFETTI */
+
+.confetti{
+
+position:fixed;
+
+top:-20px;
+
+width:9px;
+height:16px;
+
+z-index:99999;
+
+animation:
+fall 4s linear forwards;
+}
+
+@keyframes fall{
+
+to{
+
+transform:
+translateY(110vh)
+rotate(720deg);
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.navbar button{
+
+font-size:10px;
+
+padding:8px 10px;
+}
+
+.page{
+
+padding:35px 12px;
+}
+
+.card{
+
+padding:25px 17px;
+}
+
+.grid{
+
+grid-template-columns:1fr;
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+}
+
+.photo-frame img{
+
+height:360px;
+}
+
+.memory img{
+
+height:450px;
+}
+
+.game-area{
+
+height:350px;
+}
+
+.love-buttons{
+
+height:180px;
+}
+
+.no-btn{
+
+left:52%;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- LOADER -->
+
+<div id="loader">
+
+<div class="loader-content">
+
+<div class="loader-heart">
+❤️
+</div>
+
+<h1>
+Preparing Something Special...
+</h1>
+
+<p>
+For Bhoomi, the birthday girl 🎂✨
+</p>
+
+</div>
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<div class="navbar">
+
+<button class="active"
+onclick="showPage('home')">
+🏠 Home
+</button>
+
+<button onclick="showPage('letter')">
+💌 Letter
+</button>
+
+<button onclick="showPage('nakchadi')">
+😂 Nakchadi
+</button>
+
+<button onclick="showPage('special')">
+❤️ Special
+</button>
+
+<button onclick="showPage('memories')">
+📸 Photos
+</button>
+
+<button onclick="showPage('game')">
+🎮 Game
+</button>
+
+<button onclick="showPage('cake')">
+🎂 Cake
+</button>
+
+<button onclick="showPage('surprise')">
+🎁 Surprise
+</button>
+
+<button onclick="showPage('love')">
+❤️ I Love You
+</button>
+
+</div>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home"
+class="page active home">
+
+<div class="container">
+
+<div class="badge">
+✨ TODAY IS YOUR DAY ✨
+</div>
+
+
+<div class="photo-frame">
+
+<img
+src="https://img.sanishtech.com/u/c1da166e7211ad3625c7ca69c7615aad.png"
+alt="Bhoomi">
+
+</div>
+
+
+<div class="photo-title">
+📸 Birthday Girl Bhoomi ❤️
+</div>
+
+
+<h1>
+Happy Birthday<br>
+Bhoomi ❤️
+</h1>
+
+
+<div class="big-heart">
+💗
+</div>
+
+
+<h2>
+My Favourite Nakchadi™ 😂❤️
+</h2>
+
+
+<p>
+Aaj ka din normal nahi hai...<br>
+kyunki aaj Bhoomi ka birthday hai. 🎂✨
+</p>
+
+
+<button
+class="btn"
+onclick="showPage('letter')">
+
+💌 Start The Surprise
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================= LETTER ================= -->
+
+<section id="letter"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+💌 Dear Bhoomi...
+</h1>
+
+
+<p>
+Pata hai, kabhi-kabhi mujhe khud ajeeb sa lagta hai...
+hum abhi tak saamne se mile bhi nahi hain,
+phir bhi tum meri life mein itni close kaise ho gayi. 🥹❤️
+</p>
+
+<br>
+
+<p>
+Tumse baat karna meri daily life ka ek aisa part ban gaya hai
+jiske bina din thoda incomplete sa lagta hai.
+Tumhari bak-bak, tumhara gussa,
+tumhari cute si nautanki aur tumhari Nakchadi wali harkatein...
+sab kuch apna sa lagta hai. ❤️
+</p>
+
+<br>
+
+<p>
+Tum mere liye sirf meri girlfriend nahi ho.
+Tum meri best friend ho, meri favourite person ho,
+aur woh insaan ho jiske saath main apni stupid se stupid baat bhi
+share kar sakta hoon. 🫶🏻
+</p>
+
+<br>
+
+<p>
+Aaj tumhara birthday hai,
+toh meri wish bas itni si hai —
+tum hamesha khush raho,
+tumhare face par smile hamesha rahe,
+aur life tumhe woh saari khushiyan de jo tum deserve karti ho. ✨
+</p>
+
+<br>
+
+<p>
+Shayad abhi hum ek doosre ke saamne baithkar
+birthday celebrate nahi kar paa rahe,
+lekin ek din woh moment bhi aayega. 🥹❤️
+</p>
+
+<br>
+
+<button
+class="btn"
+onclick="showPage('nakchadi')">
+
+😂 Nakchadi Zone
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= NAKCHADI ================= -->
+
+<section id="nakchadi"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+😂 Nakchadi Zone
+</h1>
+
+<p>
+Warning ⚠️ — Yahan Bhoomi ki Nakchadi activities expose hongi. 😭😂
+</p>
+
+
+<div class="grid">
+
+
+<div class="fun-card">
+
+<div class="emoji">
+😤
+</div>
+
+<h3>
+Angry Mode
+</h3>
+
+<p>
+Choti si baat par gussa...
+phir thodi der baad normal.
+System samajh nahi aata. 😂
+</p>
+
+</div>
+
+
+<div class="fun-card">
+
+<div class="emoji">
+🗣️
+</div>
+
+<h3>
+Unlimited Bak-Bak
+</h3>
+
+<p>
+Tumhari talking speed ke saamne
+5G bhi slow lagta hai. 😭😂
+</p>
+
+</div>
+
+
+<div class="fun-card">
+
+<div class="emoji">
+🎬
+</div>
+
+<h3>
+Drama Queen
+</h3>
+
+<p>
+Ek choti si baat ko aise explain karna
+jaise Bollywood movie chal rahi ho. 😂
+</p>
+
+</div>
+
+
+<div class="fun-card">
+
+<div class="emoji">
+❤️
+</div>
+
+<h3>
+Favourite
+</h3>
+
+<p>
+Itni Nakchadi hone ke baad bhi
+pata nahi kyun tum favourite ho. 😂❤️
+</p>
+
+</div>
+
+
+<div class="fun-card">
+
+<div class="emoji">
+🙄
+</div>
+
+<h3>
+Attitude
+</h3>
+
+<p>
+Attitude level: Unlimited.
+Lekin cute hone ki wajah se maaf. 😌
+</p>
+
+</div>
+
+
+<div class="fun-card">
+
+<div class="emoji">
+🥹
+</div>
+
+<h3>
+Too Special
+</h3>
+
+<p>
+Jokes apart...
+tum genuinely bahut special ho. ❤️
+</p>
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="showPage('special')">
+
+❤️ Serious Section
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SPECIAL ================= -->
+
+<section id="special"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+❤️ Why You're Special
+</h1>
+
+<p>
+Kuch log life mein bas aate hain...
+aur kuch log life ka important part ban jaate hain.
+Tum second wale ho. ❤️
+</p>
+
+
+<div class="special-list">
+
+
+<div class="special-item">
+❤️ <b>Best Friend:</b>
+Tumhare saath main bina filter ke reh sakta hoon.
+</div>
+
+
+<div class="special-item">
+🫶🏻 <b>Comfort Person:</b>
+Tumse baat karne ke baad mood automatically better ho jata hai.
+</div>
+
+
+<div class="special-item">
+😂 <b>My Nakchadi:</b>
+Tum pareshaan karti ho,
+lekin wahi tumhari speciality hai.
+</div>
+
+
+<div class="special-item">
+💗 <b>Favourite Person:</b>
+Tumhari presence meri daily life ko genuinely better banati hai.
+</div>
+
+
+<div class="special-item">
+🌙 <b>Distance:</b>
+Abhi tak saamne nahi mile,
+lekin distance ne tumhe dil ke kareeb aane se nahi roka.
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="showPage('memories')">
+
+📸 Her Photos
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PHOTOS ================= -->
+
+<section id="memories"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+📸 Birthday Girl
+</h1>
+
+<p>
+Aaj ka page sirf birthday girl ke naam. ❤️
+</p>
+
+
+<div class="gallery">
+
+
+<div class="memory">
+
+<img
+src="https://img.sanishtech.com/u/c1da166e7211ad3625c7ca69c7615aad.png"
+alt="Bhoomi Photo 1">
+
+<p>
+✨ Birthday Girl
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<img
+src="https://img.sanishtech.com/u/1242e5ab62e4da2df672bd80e4d8dd47.jpeg"
+alt="Bhoomi Photo 2">
+
+<p>
+💗 My Favourite Person
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<img
+src="https://img.sanishtech.com/u/c865ead08d2e10adea6aada4a5e5b127.jpeg"
+alt="Bhoomi Photo 3">
+
+<p>
+🥹 My Nakchadi
+</p>
+
+</div>
+
+
+<div class="memory">
+
+<img
+src="https://img.sanishtech.com/u/b5149cd165a4ebe8d14bd24bdfccf2aa.jpeg"
+alt="Bhoomi Photo 4">
+
+<p>
+❤️ Birthday Queen
+</p>
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+<p>
+Ek din in photos ke saath hamari real-life memories bhi hongi. 🥹❤️
+</p>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="showPage('game')">
+
+🎮 Ab Game Khelo
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= GAME ================= -->
+
+<section id="game"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+🎮 Don't Click The Bomb 💣
+</h1>
+
+<p>
+❤️ Hearts ko click karo aur score badhao.<br>
+Lekin 💣 ko click kiya toh game over! 😂
+</p>
+
+
+<div id="gameScore">
+Score: 0
+</div>
+
+<div id="gameTimer">
+Time: 20 sec
+</div>
+
+
+<div
+class="game-area"
+id="gameArea">
+
+</div>
+
+
+<button
+class="btn"
+onclick="startGame()">
+
+🚀 START GAME
+
+</button>
+
+
+<div
+id="gameMessage"
+class="game-message">
+
+Game start karo! 😈
+
+</div>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="showPage('cake')">
+
+🎂 Cake Time
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CAKE ================= -->
+
+<section id="cake"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+🎂 Birthday Cake
+</h1>
+
+<p>
+Birthday Girl, ab cake cut karna banta hai. ❤️
+</p>
+
+
+<div class="cake-area">
+
+
+<div
+class="cake"
+id="cake">
+
+
+<div class="candle">
+
+<div
+class="flame"
+id="flame">
+</div>
+
+</div>
+
+
+<div class="cream">
+</div>
+
+
+<div class="cake-body">
+</div>
+
+
+</div>
+
+
+<button
+class="btn"
+onclick="cutCake()">
+
+🔪 Cut The Cake 🎂
+
+</button>
+
+
+<p id="cakeMessage">
+</p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SURPRISE ================= -->
+
+<section id="surprise"
+class="page">
+
+<div class="container">
+
+<div class="card">
+
+<h1>
+🎁 One Last Birthday Surprise...
+</h1>
+
+<p>
+Cake cut ho gaya... 🎂❤️<br>
+lekin birthday surprise abhi khatam nahi hua.
+</p>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="startSurprise()">
+
+✨ Open Surprise
+
+</button>
+
+
+<div
+id="surpriseContent"
+class="secret">
+
+
+<h2>
+✨ WAIT...
+</h2>
+
+
+<br>
+
+
+<p id="countdown">
+3
+</p>
+
+
+<br>
+
+
+<div class="photo-frame">
+
+<img
+src="https://img.sanishtech.com/u/b5149cd165a4ebe8d14bd24bdfccf2aa.jpeg"
+alt="Bhoomi">
+
+</div>
+
+
+<h2>
+🎉 HAPPY BIRTHDAY BHOOMI! 🎉
+</h2>
+
+
+<br>
+
+
+<p>
+Aaj ka din sirf tumhara hai. ❤️<br>
+Smile karna allowed hai...
+aur thoda Nakchadi banna bhi. 😂
+</p>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="showPage('love')">
+
+❤️ One Last Thing...
+
+</button>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= I LOVE YOU ================= -->
+
+<section id="love"
+class="page">
+
+<div class="container">
+
+<div class="card love-box">
+
+
+<div id="loveQuestion">
+
+
+<div class="love-heart">
+❤️
+</div>
+
+
+<h1 class="love-title">
+Bhoomi... ❤️
+</h1>
+
+
+<p>
+Ek last question hai...
+</p>
+
+
+<br>
+
+
+<h2>
+Will you accept one very special message from me? 🥹❤️
+</h2>
+
+
+<p>
+Hint: Is message mein sirf 3 words hain...
+</p>
+
+
+<div class="love-buttons">
+
+
+<button
+class="btn yes-btn"
+onclick="sayYes()">
+
+YES ❤️
+
+</button>
+
+
+<button
+class="btn no-btn"
+id="noButton"
+onclick="runAway()">
+
+NO 😭
+
+</button>
+
+
+</div>
+
+</div>
+
+
+<!-- SUCCESS -->
+
+<div
+id="loveSuccess"
+class="love-success">
+
+
+<div class="love-heart">
+❤️
+</div>
+
+
+<div class="love-text">
+I LOVE YOU ❤️
+</div>
+
+
+<br>
+
+
+<h2>
+Bhoomi 🥹❤️
+</h2>
+
+
+<br>
+
+
+<p>
+
+Tum meri best friend ho.<br>
+
+Tum meri Nakchadi ho.<br>
+
+Tum meri favourite person ho. 🫶🏻
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Distance ke bawajood tum meri life mein
+itni important ban gayi ho...
+
+</p>
+
+
+<br>
+
+
+<h2>
+I LOVE YOU SO MUCH. ❤️
+</h2>
+
+
+<br>
+
+
+<button
+class="btn"
+onclick="finalCelebrate()">
+
+🎉 Birthday Celebration
+
+</button>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+
+/* =========================
+LOADER
+========================= */
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader")
+.style.opacity="0";
+
+
+setTimeout(()=>{
+
+document.getElementById("loader")
+.style.display="none";
+
+},1000);
+
+},1800);
+
+});
+
+
+/* =========================
+PAGE SWITCH
+========================= */
+
+function showPage(page){
+
+document
+.querySelectorAll(".page")
+.forEach(p=>
+p.classList.remove("active")
+);
+
+
+document
+.getElementById(page)
+.classList.add("active");
+
+
+document
+.querySelectorAll(".navbar button")
+.forEach(btn=>
+btn.classList.remove("active")
+);
+
+
+document
+.querySelectorAll(".navbar button")
+.forEach(btn=>{
+
+if(
+btn.getAttribute("onclick")
+===
+`showPage('${page}')`
+){
+
+btn.classList.add("active");
+
+}
+
+});
+
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+
+createHearts(6);
+
+}
+
+
+/* =========================
+FLOATING HEARTS
+========================= */
+
+function createHeart(){
+
+const heart=
+document.createElement("div");
+
+heart.className="heart";
+
+
+const emojis=[
+"❤️",
+"💗",
+"💖",
+"💕",
+"💓",
+"💞",
+"✨"
+];
+
+
+heart.innerHTML=
+emojis[
+Math.floor(
+Math.random()*emojis.length
+)
+];
+
+
+heart.style.left=
+Math.random()*100+"vw";
+
+
+heart.style.animationDuration=
+(4+Math.random()*4)+"s";
+
+
+document.body.appendChild(heart);
+
+
+setTimeout(()=>{
+
+heart.remove();
+
+},8000);
+
+}
+
+
+function createHearts(number){
+
+for(let i=0;i<number;i++){
+
+setTimeout(()=>{
+
+createHeart();
+
+},i*150);
+
+}
+
+}
+
+
+setInterval(
+createHeart,
+1300
+);
+
+
+/* =========================
+CONFETTI
+========================= */
+
+function createConfetti(){
+
+for(let i=0;i<150;i++){
+
+const piece=
+document.createElement("div");
+
+piece.className="confetti";
+
+
+piece.style.left=
+Math.random()*100+"vw";
+
+
+piece.style.animationDelay=
+Math.random()*1.5+"s";
+
+
+const colors=[
+"#ff4f9a",
+"#ffd166",
+"#8b5cf6",
+"#6ee7b7",
+"#60a5fa",
+"#ffffff"
+];
+
+
+piece.style.background=
+colors[
+Math.floor(
+Math.random()*colors.length
+)
+];
+
+
+document.body.appendChild(piece);
+
+
+setTimeout(()=>{
+
+piece.remove();
+
+},5000);
+
+}
+
+}
+
+
+/* =========================
+BALLOONS
+========================= */
+
+function createBalloons(){
+
+for(let i=0;i<8;i++){
+
+setTimeout(()=>{
+
+const balloon=
+document.createElement("div");
+
+balloon.className="balloon";
+
+balloon.innerHTML="🎈";
+
+
+balloon.style.left=
+Math.random()*90+"vw";
+
+
+balloon.style.animationDuration=
+(5+Math.random()*4)+"s";
+
+
+document.body.appendChild(balloon);
+
+
+setTimeout(()=>{
+
+balloon.remove();
+
+},9000);
+
+},i*250);
+
+}
+
+}
+
+
+/* =========================
+FUN GAME
+========================= */
+
+let gameRunning=false;
+
+let gameScore=0;
+
+let gameTime=20;
+
+let gameTimerInterval;
+
+let spawnInterval;
+
+
+function startGame(){
+
+clearInterval(gameTimerInterval);
+
+clearInterval(spawnInterval);
+
+
+const area=
+document.getElementById("gameArea");
+
+
+area.innerHTML="";
+
+
+gameScore=0;
+
+gameTime=20;
+
+gameRunning=true;
+
+
+document.getElementById("gameScore")
+.innerHTML=
+"Score: 0";
+
+
+document.getElementById("gameTimer")
+.innerHTML=
+"Time: 20 sec";
+
+
+document.getElementById("gameMessage")
+.innerHTML=
+"❤️ Catch them! 💣 Se bachna!";
+
+
+spawnGameItem();
+
+
+spawnInterval=
+setInterval(()=>{
+
+if(gameRunning){
+
+spawnGameItem();
+
+}
+
+},650);
+
+
+gameTimerInterval=
+setInterval(()=>{
+
+gameTime--;
+
+
+document.getElementById("gameTimer")
+.innerHTML=
+"Time: "+gameTime+" sec";
+
+
+if(gameTime<=0){
+
+endGame();
+
+}
+
+},1000);
+
+}
+
+
+function spawnGameItem(){
+
+const area=
+document.getElementById("gameArea");
+
+
+const item=
+document.createElement("div");
+
+item.className="game-item";
+
+
+const isBomb=
+Math.random()<0.22;
+
+
+item.innerHTML=
+isBomb ? "💣" : "❤️";
+
+
+const maxX=
+Math.max(
+0,
+area.clientWidth-60
+);
+
+
+const maxY=
+Math.max(
+0,
+area.clientHeight-60
+);
+
+
+item.style.left=
+Math.random()*maxX+"px";
+
+
+item.style.top=
+Math.random()*maxY+"px";
+
+
+item.addEventListener(
+"click",
+()=>{
+
+if(!gameRunning)return;
+
+
+if(isBomb){
+
+gameRunning=false;
+
+clearInterval(gameTimerInterval);
+
+clearInterval(spawnInterval);
+
+
+item.innerHTML="💥";
+
+
+document.getElementById(
+"gameMessage"
+).innerHTML=
+"BOOM! 💣😂 Game Over!";
+
+
+createConfetti();
+
+
+}else{
+
+gameScore++;
+
+
+document.getElementById(
+"gameScore"
+).innerHTML=
+"Score: "+gameScore;
+
+
+item.innerHTML="💖";
+
+
+item.style.transform=
+"scale(1.5)";
+
+
+setTimeout(()=>{
+
+item.remove();
+
+},150);
+
+}
+
+});
+
+
+area.appendChild(item);
+
+
+setTimeout(()=>{
+
+if(item.parentElement){
+
+item.remove();
+
+}
+
+},2000);
+
+}
+
+
+function endGame(){
+
+gameRunning=false;
+
+clearInterval(gameTimerInterval);
+
+clearInterval(spawnInterval);
+
+
+document.getElementById(
+"gameMessage"
+).innerHTML=
+"⏰ Time Up! Final Score: "+
+gameScore+" ❤️";
+
+
+createConfetti();
+
+}
+
+
+/* =========================
+CAKE
+========================= */
+
+function cutCake(){
+
+const cake=
+document.getElementById("cake");
+
+
+cake.classList.remove("cut");
+
+
+void cake.offsetWidth;
+
+
+cake.classList.add("cut");
+
+
+document.getElementById("flame")
+.style.display="none";
+
+
+document.getElementById(
+"cakeMessage"
+).innerHTML=
+"🎉 HAPPY BIRTHDAY BHOOMI! 🎉<br><br>"+
+"Cake successfully cut! ❤️";
+
+
+createConfetti();
+
+createBalloons();
+
+createHearts(35);
+
+}
+
+
+/* =========================
+SURPRISE
+========================= */
+
+let surpriseStarted=false;
+
+
+function startSurprise(){
+
+if(surpriseStarted)return;
+
+surpriseStarted=true;
+
+
+const box=
+document.getElementById(
+"surpriseContent"
+);
+
+
+box.style.display="block";
+
+
+let count=3;
+
+
+const countdown=
+document.getElementById(
+"countdown"
+);
+
+
+countdown.innerHTML=count;
+
+
+const timer=
+setInterval(()=>{
+
+count--;
+
+
+if(count>0){
+
+countdown.innerHTML=count;
+
+}else{
+
+countdown.innerHTML="🎉";
+
+
+clearInterval(timer);
+
+
+createConfetti();
+
+createBalloons();
+
+createHearts(30);
+
+}
+
+},1000);
+
+}
+
+
+/* =========================
+RUNNING NO BUTTON
+========================= */
+
+function runAway(){
+
+const btn=
+document.getElementById(
+"noButton"
+);
+
+
+const parent=
+btn.parentElement;
+
+
+btn.style.transform=
+"scale(.2) rotate(180deg)";
+
+
+btn.style.opacity="0";
+
+
+setTimeout(()=>{
+
+const maxX=
+Math.max(
+10,
+parent.clientWidth-
+btn.offsetWidth-
+10
+);
+
+
+const maxY=
+Math.max(
+10,
+parent.clientHeight-
+btn.offsetHeight-
+10
+);
+
+
+const x=
+10+
+Math.random()*maxX;
+
+
+const y=
+10+
+Math.random()*maxY;
+
+
+btn.style.left=x+"px";
+
+btn.style.top=y+"px";
+
+
+btn.style.transform=
+"scale(1.05) rotate("+
+(
+Math.random()*40-20
+)+
+"deg)";
+
+
+btn.style.opacity="1";
+
+
+},220);
+
+
+createHearts(4);
+
+}
+
+
+/* =========================
+YES
+========================= */
+
+function sayYes(){
+
+document.getElementById(
+"loveQuestion"
+).style.display="none";
+
+
+document.getElementById(
+"loveSuccess"
+).style.display="block";
+
+
+createConfetti();
+
+createBalloons();
+
+createHearts(60);
+
+}
+
+
+/* =========================
+FINAL CELEBRATION
+========================= */
+
+function finalCelebrate(){
+
+createConfetti();
+
+createBalloons();
+
+createHearts(100);
+
+
+setTimeout(()=>{
+
+alert(
+"🎂 HAPPY BIRTHDAY BHOOMI! ❤️\n\n"+
+"Keep smiling, Birthday Girl! 🫶🏻\n\n"+
+"I LOVE YOU ❤️"
+);
+
+},500);
+
+}
+
+</script>
+
+</body>
+</html>
